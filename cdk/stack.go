@@ -49,7 +49,7 @@ func NewStack(scope constructs.Construct, id string, props *Props) awscdk.Stack 
 		Path: jsii.String("/documents"),
 		Integration: awsapigatewayv2integrations.NewLambdaProxyIntegration(&awsapigatewayv2integrations.LambdaProxyIntegrationProps{
 			Handler:              documentsPost,
-			PayloadFormatVersion: awsapigatewayv2.PayloadFormatVersion_VERSION_2_0(),
+			PayloadFormatVersion: awsapigatewayv2.PayloadFormatVersion_VERSION_1_0(),
 		}),
 	})
 
